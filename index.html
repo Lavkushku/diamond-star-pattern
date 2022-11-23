@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diamond star pattern</title>
+    <style>
+      h1{
+        text-transform: uppercase;
+        text-decoration: underline;
+        
+      }
+      .js{
+        width: 99%;
+        height: auto;
+        
+      }
+      
+    </style>
+</head>
+<body>
+ 
+  <div class="js">
+    <h1 style="color:darkblue ; border:1px solid black;text-align:center;">*Hello JavaScript*</h1>
+  </div>
+
+  
+
+    <script>
+      
+        var n = 5;
+        var string = "";
+        // Upside pyramid
+        for (var i = 1; i <= n; i++) {
+          // printing spaces
+          for (var j = n; j > i; j--) {
+            string += " ";
+          }
+          // printing star
+          for (var k = 0; k < i * 2 - 1; k++) {
+            string += "*";
+          }
+          string += "\n";
+        }
+        // downside pyramid
+        for (var i = 1; i <= n - 1; i++) {
+          // printing spaces
+          for (var j = 0; j < i; j++) {
+            string += " ";
+          }
+          // printing star
+          for (var k = (n - i) * 2 - 1; k > 0; k--) {
+            string += "*";
+          }
+          string += "\n";
+        }
+        console.log(string);
+      
+    </script>
+</body>
+</html>
